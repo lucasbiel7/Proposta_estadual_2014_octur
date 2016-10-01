@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.PrincipalController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="103.0" prefWidth="585.0" styleClass="menu" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btAnteriorActionEvent" prefHeight="81.0" prefWidth="70.0" text="&lt;" AnchorPane.leftAnchor="5.0" />
+            <Button layoutX="507.0" layoutY="14.0" mnemonicParsing="false" onAction="#btProximoActionEvent" prefHeight="81.0" prefWidth="70.0" text="&gt;" AnchorPane.rightAnchor="5.0" />
+            <Label fx:id="lbModulo" alignment="CENTER" contentDisplay="CENTER" layoutX="92.0" layoutY="24.0" prefHeight="64.0" prefWidth="414.0" styleClass="titulo" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="83.0">
+               <font>
+                  <Font name="System Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apPrincipal" layoutX="8.0" layoutY="118.0" prefHeight="252.0" prefWidth="590.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="111.0" />
+      <Button layoutX="550.0" layoutY="374.0" mnemonicParsing="false" onAction="#btSairActionEvent" text="Sair" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0" />
+      <Label fx:id="lbUsuario" layoutX="14.0" layoutY="378.0" prefHeight="17.0" prefWidth="255.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" />
+      <Label fx:id="lbDataHora" layoutX="394.0" layoutY="378.0" prefHeight="17.0" prefWidth="148.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="58.0" />
+   </children>
+</AnchorPane>

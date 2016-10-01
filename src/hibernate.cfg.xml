@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sisOCTUR?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">OC2015</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <mapping class="br.com.SistemaOCTur.entity.Cargo"/>
+    <mapping class="br.com.SistemaOCTur.entity.Usuario"/>
+    <mapping class="br.com.SistemaOCTur.entity.Permissao"/>
+    <mapping class="br.com.SistemaOCTur.entity.Modulo"/>
+    <mapping class="br.com.SistemaOCTur.entity.PermissaoUsuario"/>
+    <mapping class="br.com.SistemaOCTur.entity.Hospedagem"/>
+    <mapping class="br.com.SistemaOCTur.entity.Cliente"/>
+    <mapping class="br.com.SistemaOCTur.entity.TipoApartamento"/>
+    <mapping class="br.com.SistemaOCTur.entity.Salao"/>
+    <mapping class="br.com.SistemaOCTur.entity.Evento"/>
+    <mapping class="br.com.SistemaOCTur.entity.TipoServico"/>
+    <mapping class="br.com.SistemaOCTur.entity.TipoProduto"/>
+    <mapping class="br.com.SistemaOCTur.entity.Produto"/>
+    <mapping class="br.com.SistemaOCTur.entity.Pedido"/>
+    <mapping class="br.com.SistemaOCTur.entity.PedidoProduto"/>
+  </session-factory>
+</hibernate-configuration>

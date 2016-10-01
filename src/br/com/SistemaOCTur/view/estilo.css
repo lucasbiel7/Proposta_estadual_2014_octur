@@ -1,0 +1,44 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.mainFxmlClass {
+    -fx-background-color: white;
+}
+
+
+.menu{
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+
+}
+
+.titulo{
+    -fx-text-alignment: center;
+    -fx-text-fill:#ccccff;
+}
+.button{
+    -fx-background-color:#ccffff;
+}
+.button:hover{
+    -fx-background-color: #ccccff;
+}
+.checkColorido{
+    -fx-text-fill:black;
+}
+.checkColorido:hover{
+    -fx-text-fill:#3333ff;
+}
+.imagem{
+    -fx-border-color: black;
+    -fx-border-image-width: 1px;
+    -fx-border-width: 1px;
+}
+
+.default-color0.chart-bar{
+    -fx-bar-fill: green;
+}
+.default-color1.chart-bar{
+    -fx-bar-fill: red;
+}

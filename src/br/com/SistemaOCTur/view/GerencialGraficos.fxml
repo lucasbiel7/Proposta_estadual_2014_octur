@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="837.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.GerencialGraficosController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <DatePicker fx:id="dpData" layoutX="14.0" layoutY="20.0" onAction="#dpDataActionEvent" prefHeight="25.0" prefWidth="254.0" />
+      <StackedBarChart fx:id="sbcPrevisaoChegada" layoutX="47.0" layoutY="356.0" prefHeight="216.0" prefWidth="254.0" title="Gráfico de previsão de Chegada">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis autoRanging="false" side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <StackedBarChart fx:id="sbcPrevisaoSaida" layoutX="339.0" layoutY="350.0" prefHeight="222.0" prefWidth="260.0" title="Gráfico de previsão de Saída">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis autoRanging="false" side="LEFT" />
+         </yAxis>
+      </StackedBarChart>
+      <BarChart fx:id="bcOcupacaoDiaria" layoutX="18.0" layoutY="53.0" legendVisible="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="297.0" prefWidth="216.0" title="Gráfio de Ocupação Diária">
+        <xAxis>
+          <CategoryAxis tickMarkVisible="false" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis autoRanging="false" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <LineChart fx:id="lnGraficoOcupacaoMensal" layoutX="305.0" layoutY="53.0" legendVisible="false" prefHeight="297.0" prefWidth="500.0" title="Gráfico de Ocupação % Mensal">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis autoRanging="false" side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

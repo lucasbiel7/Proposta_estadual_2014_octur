@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.PrincipalConfiguradorController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <TreeView fx:id="tvMenu" layoutX="14.0" layoutY="17.0" onMouseReleased="#tvMenuMouseReleased" prefHeight="374.0" prefWidth="158.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <AnchorPane fx:id="apContainer" layoutX="171.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>

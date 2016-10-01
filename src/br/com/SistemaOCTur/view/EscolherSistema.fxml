@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apContainer" prefHeight="237.0" prefWidth="434.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.EscolherSistemaController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="29.0" layoutY="52.0" mnemonicParsing="false" onAction="#btAreaDoFuncionarioActionEvent" prefHeight="135.0" prefWidth="182.0" text="Área do funcionário" />
+      <Button layoutX="229.0" layoutY="52.0" mnemonicParsing="false" onAction="#btFazerPedidoActionEvent" prefHeight="135.0" prefWidth="182.0" text="Pedidos" />
+   </children>
+</AnchorPane>

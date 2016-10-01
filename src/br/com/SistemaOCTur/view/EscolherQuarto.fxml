@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="709.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.EscolherQuartoController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <ComboBox fx:id="cbAndares" layoutX="528.0" layoutY="22.0" prefWidth="150.0" AnchorPane.rightAnchor="31.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="68.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="09" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="68.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="07" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="546.0" layoutY="68.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="01" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="68.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="05" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="68.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="03" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="184.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="04" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="282.0" layoutY="184.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="06" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="546.0" layoutY="184.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="02" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="184.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="08" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="184.0" onMouseReleased="#selecionarAndarMouseReleased" prefHeight="116.0" prefWidth="132.0" style="-fx-border-color: black;" text="10" />
+      <RadioButton fx:id="rbFazerPedido" layoutX="19.0" layoutY="26.0" mnemonicParsing="false" selected="true" text="Fazer pedido">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipo" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbVisualizarPedido" layoutX="126.0" layoutY="26.0" mnemonicParsing="false" text="Visualizar pedido" toggleGroup="$tipo" />
+   </children>
+</AnchorPane>

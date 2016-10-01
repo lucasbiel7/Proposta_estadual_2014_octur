@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="518.0" prefWidth="932.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.EventosControleDeSalaoController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="90.0" prefWidth="696.0" text="Planejamento dos Salões de Evento" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="apTabela" layoutX="14.0" layoutY="102.0" prefHeight="200.0" prefWidth="688.0" AnchorPane.bottomAnchor="167.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="102.0" />
+      <Pane layoutX="8.0" layoutY="372.0" prefHeight="132.0" prefWidth="902.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="22.0">
+         <children>
+            <Label layoutX="783.0" layoutY="84.0" prefHeight="17.0" prefWidth="104.0" text="Manutenção" AnchorPane.bottomAnchor="45.0" />
+            <Label layoutX="783.0" layoutY="55.0" prefHeight="17.0" prefWidth="104.0" text="Limpeza" />
+            <Label layoutX="181.0" text="Data de Início" />
+            <Label layoutX="547.0" layoutY="2.0" text="Salão de Eventos" />
+            <Button layoutX="623.0" layoutY="82.0" mnemonicParsing="false" onAction="#btExcluirActionEvent" text="Excluir" />
+            <ComboBox fx:id="cbSalao" layoutX="547.0" layoutY="30.0" prefWidth="150.0" promptText="Selecione..." />
+            <Label layoutX="743.0" layoutY="73.0" prefHeight="28.0" prefWidth="34.0" style="-fx-background-color: blue;" />
+            <Label layoutX="743.0" layoutY="42.0" prefHeight="28.0" prefWidth="34.0" style="-fx-background-color: yellow;" />
+            <ComboBox fx:id="cbTipoServico" layoutY="28.0" prefWidth="150.0" promptText="Selecione..." />
+            <DatePicker fx:id="dpInicio" layoutX="181.0" layoutY="28.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="743.0" layoutY="9.0" prefHeight="28.0" prefWidth="34.0" style="-fx-background-color: green;" />
+            <Label layoutX="783.0" layoutY="23.0" prefHeight="17.0" prefWidth="104.0" text="Eventos" />
+            <Label layoutX="356.0" text="Data de Término" />
+            <Button layoutX="547.0" layoutY="82.0" mnemonicParsing="false" onAction="#btRegistrarActionEvent" text="Registrar" />
+            <Label layoutX="783.0" layoutY="114.0" prefHeight="17.0" prefWidth="104.0" text="Indisponível" />
+            <Label text="Tipo de Serviço" />
+            <DatePicker fx:id="dpFim" layoutX="356.0" layoutY="28.0" />
+            <Label layoutX="743.0" layoutY="104.0" prefHeight="28.0" prefWidth="34.0" style="-fx-background-color: red;" />
+         </children>
+      </Pane>
+      <ComboBox fx:id="cbMes" layoutX="634.0" layoutY="77.0" onAction="#atualizarTabelaActionEvent" prefWidth="150.0" AnchorPane.rightAnchor="148.0" />
+      <Spinner fx:id="spAno" layoutX="794.0" layoutY="77.0" onClipChange="#atualizarTabelaActionEvent" prefHeight="25.0" prefWidth="129.0" AnchorPane.rightAnchor="9.0" />
+   </children>
+</AnchorPane>

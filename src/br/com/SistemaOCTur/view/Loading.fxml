@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="73.0" prefWidth="471.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.LoadingController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <ProgressBar fx:id="pbLoading" layoutY="-2.0" prefHeight="75.0" prefWidth="471.0" progress="0.0" />
+      <Label fx:id="lbProgresso" layoutX="120.0" layoutY="28.0" prefHeight="17.0" prefWidth="214.0" />
+   </children>
+</AnchorPane>

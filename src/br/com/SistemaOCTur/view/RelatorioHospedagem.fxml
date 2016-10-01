@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.SistemaOCTur.view.RelatorioHospedagemController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <DatePicker fx:id="dpInicio" layoutX="77.0" layoutY="14.0" />
+      <Label layoutX="40.0" layoutY="18.0" text="Inicio" />
+      <Label layoutX="40.0" layoutY="48.0" text="Fim" />
+      <DatePicker fx:id="dpFim" layoutX="77.0" layoutY="44.0" />
+      <Button layoutX="185.0" layoutY="82.0" mnemonicParsing="false" onAction="#btVisualizarActionEvent" text="Visualizar" />
+      <Button layoutX="185.0" layoutY="112.0" mnemonicParsing="false" onAction="#btPDFActionEvent" prefHeight="25.0" prefWidth="66.0" text="PDF" />
+      <Button layoutX="185.0" layoutY="142.0" mnemonicParsing="false" onAction="#btXLSActionEvent" prefHeight="25.0" prefWidth="66.0" text="XLS" />
+      <SwingNode fx:id="swRelatorio" layoutX="261.0" layoutY="18.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

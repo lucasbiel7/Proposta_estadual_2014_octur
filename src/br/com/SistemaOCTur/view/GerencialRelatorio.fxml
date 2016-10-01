@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.SistemaOCTur.view.GerencialRelatorioController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#btHospedesActionEvent" prefHeight="25.0" prefWidth="115.0" text="Hospedes" />
+      <Button layoutX="14.0" layoutY="53.0" mnemonicParsing="false" onAction="#btEventosActionEvent" prefHeight="25.0" prefWidth="115.0" text="Eventos" />
+      <Button layoutX="14.0" layoutY="83.0" mnemonicParsing="false" onAction="#btHospedagemActionEvent" prefHeight="25.0" prefWidth="115.0" text="Hospedagem" />
+      <Button layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#btQuartosActionEvent" text="Quartos populares" />
+      <Button layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#btEstatisticosActionEvent" prefHeight="25.0" prefWidth="115.0" text="Estatísticos" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="138.0" layoutY="13.0" prefViewportHeight="200.0" prefViewportWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="138.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <content>
+            <AnchorPane fx:id="apPrincipal" layoutX="138.0" layoutY="13.0" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

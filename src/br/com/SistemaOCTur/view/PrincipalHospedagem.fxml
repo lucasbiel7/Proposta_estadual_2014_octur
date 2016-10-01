@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.PrincipalHospedagemController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" layoutX="2.0" layoutY="3.0" pickOnBounds="false" prefHeight="272.0" prefWidth="593.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="65.0" layoutY="44.0" prefHeight="231.0" prefWidth="555.0">
+               <children>
+                  <Button fx:id="btRelatorio" layoutX="346.0" layoutY="106.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Relatórios" />
+                  <Button fx:id="btFechamentoDeConta" layoutX="346.0" layoutY="66.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Fechamento de Contas" />
+                  <Button fx:id="btControleReservas" layoutX="74.0" layoutY="101.0" mnemonicParsing="false" onAction="#btControlReservaActionEvent" prefHeight="25.0" prefWidth="157.0" text="Controle de Reservas" />
+                  <Button fx:id="btCadastroHospede" layoutX="74.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Cadastro de Hóspedes" />
+                  <Button fx:id="btConsultas" layoutX="199.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="194.0" text="Consultas" />
+                  <Button fx:id="btLancamentoDespesa" layoutX="346.0" layoutY="25.0" mnemonicParsing="false" text="Lançamento de Despesas" />
+                  <Button fx:id="btCadastroApartamentos" layoutX="74.0" layoutY="61.0" mnemonicParsing="false" text="Cadastro de apartamentos" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

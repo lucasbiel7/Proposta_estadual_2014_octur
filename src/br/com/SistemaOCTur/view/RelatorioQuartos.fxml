@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.SistemaOCTur.view.RelatorioQuartosController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <BarChart fx:id="bcTipoQuartos" layoutX="265.0" layoutY="3.0" prefHeight="400.0" prefWidth="321.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="269.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <DatePicker fx:id="dpInicio" layoutX="76.0" layoutY="27.0" onAction="#colocargraficoActionEvent" />
+      <Label layoutX="25.0" layoutY="31.0" text="Inicio" />
+      <Label layoutX="25.0" layoutY="71.0" text="Fim" />
+      <DatePicker fx:id="dpFim" layoutX="76.0" layoutY="67.0" onAction="#colocargraficoActionEvent" />
+   </children>
+</AnchorPane>

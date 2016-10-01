@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorioHospedagem" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7462d8a9-c8d3-406e-ad11-0c367ee35a5c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="periodo" class="java.lang.String"/>
+	<parameter name="usuario" class="java.lang.String"/>
+	<parameter name="renda" class="java.lang.String"/>
+	<parameter name="dados" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="158" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="566" height="56" uuid="3c4ca79e-13c1-45ff-83e4-403318432660"/>
+				<textElement textAlignment="Center">
+					<font size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório Hospedagem]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="56" width="252" height="20" uuid="37f09d66-1344-4c35-a47c-57e8de2df498"/>
+				<textFieldExpression><![CDATA[$P{usuario}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="56" width="100" height="20" uuid="4dac2a35-7a3b-479e-8bb7-5ac9eab7fcfb"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Pesquisar por:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="76" width="100" height="20" uuid="8d2efaf8-c422-44a1-a86f-c9da7c079602"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Data da pesquisa:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH:mm:ss">
+				<reportElement x="113" y="76" width="252" height="20" uuid="133f8049-c9f7-47fd-85b7-4f20488f2f98"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="96" width="252" height="20" uuid="94a04622-9cbe-4118-862a-04d19cf449f9"/>
+				<textFieldExpression><![CDATA[$P{periodo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="96" width="100" height="20" uuid="c3da2a79-608c-458c-ad87-35382509f21c"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Periodo:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="142" width="555" height="1" uuid="6ec598fa-b43c-48c3-aed7-25ab5866e739"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="116" width="100" height="20" uuid="0a56c864-7889-48dc-9999-b6312b277d36"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Renda total:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="113" y="116" width="252" height="20" uuid="ccf157af-1a06-4245-8a29-ee32921b6c60"/>
+				<textFieldExpression><![CDATA[$P{renda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="0" width="555" height="20" uuid="225dbc95-bb93-4557-889c-3506846e4110"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA[$P{dados}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

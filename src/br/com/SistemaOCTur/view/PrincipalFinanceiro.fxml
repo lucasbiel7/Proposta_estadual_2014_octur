@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.SistemaOCTur.view.PrincipalFinanceiroController">
+    <stylesheets>
+        <URL value="@estilo.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="102.0" layoutY="82.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Contas a receber" />
+      <Button layoutX="102.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Contas a pagar" />
+      <Button layoutX="102.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Cobrança" />
+      <Button layoutX="102.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Centro de Custos" />
+      <Button layoutX="310.0" layoutY="86.0" mnemonicParsing="false" text="Apuração de Resultado&#10;Operacionais" />
+      <Button layoutX="310.0" layoutY="162.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Relatórios" />
+      <Button layoutX="310.0" layoutY="202.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="139.0" text="Consultas" />
+   </children>
+</AnchorPane>
